@@ -5,16 +5,14 @@ import com.example.Pathway.Models.DepartmentModel;
 import com.example.Pathway.Services.CourseService;
 import com.example.Pathway.Services.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/pathway")
+@CrossOrigin(origins = "http://localhost:5173")
 public class PathController {
 
     @Autowired
